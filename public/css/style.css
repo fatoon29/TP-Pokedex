@@ -9,8 +9,8 @@ body {
 
 .card{
     margin: 2em;
-    display: flex;
-    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .btn-primary{
@@ -38,10 +38,13 @@ body {
 }
 
 .progress-bar{
-    background: rgb(255,0,0);
-    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(24,167,1,1) 100%);
+    background: rgb(221,144,144);
+    background: linear-gradient(90deg, rgba(221,144,144,1) 7%, rgba(249,0,0,1) 100%);
 }
 
+h1{
+    margin: 0 1em 0.5em 0.5em;
+}
 
 h4{
     margin-left: 17em;
@@ -49,7 +52,15 @@ h4{
 
 h5{
     margin:1em 0 0.2em 12em;
+  
 }
 
+p{
+    font-size: 1.5em;
+    text-align: center;
+}
 
-
+.nav-link{
+    font-size: 1.5em ;
+}
+ 
