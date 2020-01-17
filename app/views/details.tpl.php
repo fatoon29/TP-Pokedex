@@ -1,6 +1,6 @@
 <div class="card mb-3" ">
-<div class=" card-header bg-transparent border-success">
-    <h2>#<?= $viewParams['details']->getNumero() ?>  <?= $viewParams['details']->getNom() ?></h2>
+<div class=" card-header bg-transparent">
+    <h2>Détails de  <?= $viewParams['details']->getNom() ?></h2>
 </div>
 <div class="row no-gutters">
     <div class="col-md-4">
@@ -9,18 +9,19 @@
     <div class="col-md-8">
         <div class="card-body">
 
+            <h4>#<?= $viewParams['details']->getNumero() ?>  <?= $viewParams['details']->getNom() ?></h4>
 
             <?php $pv = ($viewParams['details']->getPv()) * 100 / 255 ?>
            
             <h5>Pv : <?= $viewParams['details']->getPv() ?></h5>
             <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="255" style="width:<?= $pv ?>%">
+                <div class="progress-bar blue" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="255" style="width:<?= $pv ?>%">
                 </div>
             </div>
 
             <?php $attaque = ($viewParams['details']->getAttaque()) * 100 / 255 ?>
            
-            <h5>attaque : <?= $viewParams['details']->getAttaque() ?></h5>
+            <h5>Attaque : <?= $viewParams['details']->getAttaque() ?></h5>
             <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="255" style="width:<?= $attaque ?>%">
                 </div>
@@ -28,7 +29,7 @@
 
             <?php $defense = ($viewParams['details']->getDefense()) * 100 / 255 ?>
            
-            <h5>defense : <?= $viewParams['details']->getDefense() ?></h5>
+            <h5>Defense : <?= $viewParams['details']->getDefense() ?></h5>
             <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="255" style="width:<?= $defense ?>%">
                 </div>
