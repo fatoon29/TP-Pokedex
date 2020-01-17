@@ -1,0 +1,18 @@
+body {
+    background: #CE0000;
+    background: -moz-linear-gradient(left, #CE0000 0%, #262020 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(left, #CE0000 0%, #262020 50%, #FFFFFF 100%);
+    background: linear-gradient(to right, #CE0000 0%, #262020 50%, #FFFFFF 100%);
+    }
+
+
+.card{
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-primary{
+    background-color: red;
+    border-color: red;
+}
