@@ -15,7 +15,7 @@ class Pokemon
     private $defense_spe;
     private $vitesse;
     private $numero;
-
+ 
     public function findAll()
     {
         $pdo = Database::getPDO();
@@ -32,10 +32,14 @@ class Pokemon
 
     public function find(int $id)
     {
-        $sql = "SELECT
-                *
-                FROM `pokemon`
-                WHERE `id` = $id";
+        $sql = '
+        SELECT *
+        FROM `pokemon_type`
+        JOIN `type`
+        ON `pokemon_type`.type_id = `type`.id
+        JOIN `pokemon`
+        ON `pokemon_type`.pokemon_numero = `pokemon`.numero 
+        WHERE `pokemon`.id =' . $id;
 
         $pdo = Database::getPDO();
 
@@ -227,4 +231,5 @@ class Pokemon
 
         return $this;
     }
+
 }

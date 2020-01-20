@@ -2,6 +2,8 @@
 
 namespace Pokedex\Controllers;
 
+use Pokedex\Models\Type;
+
 class Controller
 {
     protected function show(string $filename, array $viewParams = Null)
@@ -16,6 +18,9 @@ class Controller
         if (!empty($viewParams)){
             extract($viewParams);
         }
+
+
+
     }
 
 }

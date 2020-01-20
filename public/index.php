@@ -27,6 +27,17 @@
         "details" 
     );
 
+    $router->map(
+        "GET",
+        "/type/[i:id]/",  
+        [
+            "method" => "pokemonByType",
+            "controller" => "Pokedex\Controllers\PokedexController",
+        ],
+        "type" 
+    );
+
+
 
     $match = $router->match();
 

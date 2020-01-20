@@ -2,7 +2,7 @@
 
 
 <div class="card-deck">
-    <?php foreach ($viewParams['list'] as $pokemon) : ?>
+    <?php foreach ($viewParams['allPokemon'] as $pokemon) : ?>
         <div class="col mb-6">
             <div class="card">
                 <img src="<?= $_SERVER["BASE_URI"] ?>/img/<?= $pokemon->getNumero() ?>.png" alt=<?= $pokemon->getNom() ?>>
